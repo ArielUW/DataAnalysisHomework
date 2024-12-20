@@ -1,0 +1,11 @@
+TASK 1
+Perform Wikipedia searches using the MediaWiki API. Prepare three searches where you query the database for your chosen Wikipedia object. Analyse the first 5 search results for each query, describe what you see, whether it meets your expectations and compare these results with the same search performed directly on Wikipedia (GUI). 
+Write a short note and hand it in on the google classroom application
+
+If u want to use pageID as a URL parameter, paste it into this form:
+
+https://en.wikipedia.org/?curid=XXXX
+
+E.g. https://en.wikipedia.org/?curid=6678
+
+### Note:

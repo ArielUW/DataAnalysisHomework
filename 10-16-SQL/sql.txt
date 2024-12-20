@@ -1,0 +1,65 @@
+Create a table for the (human) clients of the veterinary clinic. Each client of the clinic should have information about their personal details, phone number, email address and animal (for now, let's assume that each client can only have one animal). Once you have created the table, write 5 database queries of your choice using the information from the class.
+
+Submit the answer in a text file where you paste all the code.
+
+### SQL queries:
+
+CREATE TABLE clients (
+  client_id int PRIMARY KEY,
+  first_name varchar(255) NOT NULL,
+  last_name varchar(255) NOT NULL,
+  phone_number char(9) NOT NULL,
+  email varchar(255) NOT NULL,
+  animal_type varchar(255) NOT NULL
+);
+
+INSERT INTO Clients (client_id, first_name, last_name, phone_number, email, animal_type) VALUES (
+    1,
+    "Kaylan",
+    "Ros",
+    "731222904",
+    "k.ros@yahoo.com",
+    "cat"
+);
+
+INSERT INTO Clients (client_id, first_name, last_name, phone_number, email, animal_type) VALUES (
+    2,
+    "Phillip",
+    "Coriander",
+    "170712771",
+    "philcor@gmail.com",
+    "ferret"
+);
+
+INSERT INTO Clients (client_id, first_name, last_name, phone_number, email, animal_type) VALUES (
+    3,
+    "Desiree",
+    " Merry",
+    "120172177",
+    "merry76@gmail.com",
+    "elephant"
+);
+
+INSERT INTO Clients (client_id, first_name, last_name, phone_number, email, animal_type) VALUES (
+    4,
+    "Joslyn",
+    "Kyrsten",
+    "822960154",
+    "joslyn.k@hotmail.com",
+    "cat"
+);
+
+INSERT INTO Clients (client_id, first_name, last_name, phone_number, email, animal_type) VALUES (
+    5,
+    "Oli",
+    "Kristi",
+    "712106032",
+    "olikristi@gmail.com",
+    "dog"
+);
+
+SELECT first_name, last_name, animal_type FROM Clients WHERE animal_type != "cat";
+SELECT DISTINCT animal_type FROM Clients;
+SELECT COUNT(DISTINCT animal_type) FROM Clients;
+SELECT COUNT(client_id), animal_type FROM Clients GROUP BY animal_type;
+SELECT last_name FROM Clients WHERE last_name LIKE "K%"

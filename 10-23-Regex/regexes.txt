@@ -1,0 +1,17 @@
+Create the following objects (test strings) in regex101:
+First and last name: Hubar, Patrick. Date of birth: June 7, 1993. Phone number: 123-456-789
+Name: Mickiewicz, Adam. Date of birth: 22 January 1877. Phone number: 789456123
+Then, using regular expressions extract:
+First and last names,
+Dates of birth,
+Telephone numbers
+
+Hand in your assignment by sending a link to Regex101
+
+### Regex101 links:
+
+Names: https://regex101.com/r/lya6gY/2
+Dates of birth:
+https://regex101.com/r/KSgPlr/1
+Phone numbers:
+https://regex101.com/r/LZYoHR/1
